@@ -9,6 +9,7 @@ public class MedicationItem
     
     public string Name { get; set; } = string.Empty;
     public string Timing { get; set; } = string.Empty;
+    public int DaysToTake { get; set; }
     
     // We can store string array as JSON in a single column or use a separate table.
     // For simplicity with EF Core 8 primitive collections, we can map string[] directly to JSON/Array.
